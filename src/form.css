@@ -1,0 +1,47 @@
+h2 {
+  padding: 10px 20px;
+  display: flex;
+  background-color: tomato;
+  color: white;
+  justify-content: center;
+}
+form {
+  border: 2px solid red;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: aqua;
+  width: 33%;
+  margin: auto;
+}
+label {
+  margin-right: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+input {
+  border-radius: 10px;
+  width: 300px;
+}
+.div_1 {
+  display: flex;
+  justify-content: center;
+}
+.div_2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.div_3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+button {
+  padding: 8px 25px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
