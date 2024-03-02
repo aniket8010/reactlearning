@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./form.css";
+import { V } from "./V";
 export const Form = () => {
-  const [values, setValues] = useState({ firstname: "", lastname: "" });
-  const [data, setData] = useState({ firstname: "", lastname: "" });
+  const [values, setValues] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+  });
+  const [data, setData] = useState({ firstname: "", lastname: "", email: "" });
   //creating a function to get the onChange values from inputs elements
 
   function onChange(event) {
@@ -37,13 +42,31 @@ export const Form = () => {
           />
           <br />
         </div>
+        <div className="div_4">
+          <label htmlFor="Email">Email :-</label> <br />
+          <input
+            style={{ marginLeft: "55px" }}
+            onChange={onChange}
+            type="text"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div className="div_5">
+          <label htmlFor="Email">Mobile No :-</label> <br />
+          <input
+            style={{ marginLeft: "px" }}
+            onChange={onChange}
+            type="text"
+            id="number"
+            name="number"
+          />
+        </div>
         <div className="div_3">
           <button>Submit</button>
         </div>
       </form>
-      <span>First Name is ={data.firstname}</span>
-      <br />
-      <span>Last Name is ={data.lastname}</span>
+      <V {...data} />{" "}
     </>
   );
 };
