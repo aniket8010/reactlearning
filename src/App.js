@@ -1,8 +1,18 @@
 import "./App.css";
-import { Form } from "./Form";
+import { TodoMain } from "./Todo/TodoMain";
+// import { Form } from "./Form";
 
 function App() {
-  return <><Form/></>;
+  return (
+    <>
+    
+      <>
+        {/* <Form /> */}
+      </>
+      ;
+      <TodoMain />
+    </>
+  );
 }
 
 export default App;
