@@ -15,6 +15,16 @@ export const MyButton = (props) => {
           {props.title}
         </button>
       );
+    case "green":
+      return (
+        <button
+          style={{ color: "green", fontSize: 14, border: "1px solid green" }}
+          className=" rounded-pill px-3"
+        >
+          {props.title}
+        </button>
+      );
+
     case "warning-light":
       return (
         <button
